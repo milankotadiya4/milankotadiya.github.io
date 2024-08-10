@@ -7,6 +7,19 @@
     <meta name="keywords" content="Milan Kotadiya, portfolio, Milan, data engineer, personal portfolio, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Milan's Portfolio. Data Engineer and Data Science Professional" />
     <!-- Custom CSS -->
+<!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,46 +35,76 @@
 </div> -->
 
 <!-- navbar starts -->
-<header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Milan</a>
+<header class="d-flex justify-content-between align-items-center p-3">
+  <a href="/" class="logo d-flex align-items-center">
+      <i class="fab fa-node-js mr-2"></i> 
+      <span>Milan</span>
+  </a>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <div id="menu" class="fas fa-bars d-lg-none"></div>
+
+  <nav class="navbar">
+      <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+          </li>
+      </ul>
+  </nav>
 </header>
 <!-- navbar ends -->
 
 
 <!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
+<section class="home d-flex align-items-center" id="home" style="height: 100vh;">
+  <div id="particles-js"></div>
 
-    <div class="content">
-    <h2>Hi There,<br/> I am Milan <span>Kotadiya</span></h2>
-    <p>I am <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/milan-kotadiya/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/milankotadiya4" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="mail" aria-label="Mail" href="mailto:milankotadia4454@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-        </ul>
+  <div class="content text-center text-white">
+      <h2>Hi There,<br/> I am Milan <span>Kotadiya</span></h2>
+      <p>I am <span class="typing-text"></span></p>
+      <a href="#about" class="btn btn-primary mt-4">About Me <i class="fas fa-arrow-circle-down"></i></a>
+
+      <div class="socials">
+          <ul class="social-icons list-inline">
+              <li class="list-inline-item">
+                  <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/milan-kotadiya/" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="github" aria-label="GitHub" href="https://github.com/milankotadiya4" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="mail" aria-label="Mail" href="mailto:milankotadia4454@gmail.com" target="_blank">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+              </li>
+          </ul>
       </div>
-    </div>
-<div >
-    <img draggable="false" class="tilt" src="./assets/images/programmer.png" alt="">
-</div>
+  </div>
+
+  <div>
+      <img draggable="false" class="tilt img-fluid" src="./assets/images/programmer.png" alt="Programmer Image">
+  </div>
 </section>
 <!-- hero section ends -->
 
@@ -691,6 +734,9 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <!-- typed.js cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
